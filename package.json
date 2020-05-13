@@ -2,13 +2,12 @@
   "name": "pointr",
   "version": "1.0.0",
   "scripts": {
-    "client": "cd client && yarn start",
     "server": "nodemon server.js",
-    "build": "cd client && yarn run build",
+    "build": "yarn run build",
     "initialize": "cd client && yarn",
-    "dev": "yarn && concurrently --kill-others-on-fail \"yarn server\" \"yarn client\"",
+    "dev": "yarn && concurrently --kill-others-on-fail \"yarn server\"",
     "start": "node server.js",
-    "heroku-postbuild": "cd client && yarn install && yarn install --only=dev --no-shrinkwrap && yarn run build"
+    "heroku-postbuild": "yarn install --only=dev --no-shrinkwrap && yarn run build"
   },
   "dependencies": {
     "apollo-server-express": "^2.12.0",
