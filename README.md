@@ -12,7 +12,7 @@ In main directory, run:
 ### Running app
 
 #### `yarn run initialize`
-To install dependencies. Alternatively can install deps with `yarn` in main dir && `cd` into `client` folder and `yarn`.
+To install dependencies. Alternatively can install deps with `yarn` in main dir 
 
 #### `yarn run dev`
 To run in the development mode.<br />
