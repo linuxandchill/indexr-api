@@ -28,6 +28,7 @@ module.exports = {
     createLink: async (parent, args, context, info) => {
       try {
         console.log(args);
+        return "CREATED"
       } catch (err) {
         console.log(err);
         throw err;
