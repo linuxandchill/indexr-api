@@ -11,9 +11,7 @@ In main directory, run:
 
 ### Running app
 
-#### `yarn run initialize`
-To install dependencies. Alternatively can install deps with `yarn` in main dir 
+#### `yarn` 
+#### `yarn server`
 
-#### `yarn run dev`
-To run in the development mode.<br />
 Visit [http://localhost:5000/graphql](http://localhost:5000/graphql) to open playground.
