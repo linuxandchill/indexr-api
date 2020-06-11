@@ -38,8 +38,8 @@ const runEntry = async () => {
 
     const PORT = process.env.PORT || 5000;
     const mongoPw = process.env.MONGO_PW;
-    await mongoose.connect(`mongodb+srv://testuser:${mongoPw}@cluster0-3qiug.mongodb.net/test?retryWrites=true&w=majority`,  { useFindAndModify: false })
-        .then(result => {
+    // await mongoose.connect(`mongodb+srv://testuser:${mongoPw}@cluster0-3qiug.mongodb.net/test?retryWrites=true&w=majority`,  { useFindAndModify: false })
+    //     .then(result => {
             app.listen(PORT, () => {
                 console.log('------')
                 console.log('------')
@@ -47,9 +47,10 @@ const runEntry = async () => {
                 console.log('------')
                 console.log('------')
             });
-        }).catch(err => {
-            console.log(err)
-        })
+        // })
+        // .catch(err => {
+        //     console.log(err)
+        // })
 }
 
 runEntry()

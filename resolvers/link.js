@@ -25,13 +25,13 @@ module.exports = {
   },
 
   Mutation: {
-    createLink: combineResolvers(async (parent, args, context, info) => {
+    createLink: async (parent, args, context, info) => {
       try {
         console.log(args);
       } catch (err) {
         console.log(err);
         throw err;
       }
-    })
+    }
   }
 };
