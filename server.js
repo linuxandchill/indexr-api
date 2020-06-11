@@ -21,13 +21,13 @@ const runEntry = async () => {
         typeDefs,
         resolvers,
         playground: true,
-        context: async ({ req }) => {
-            await verifyUser(req)
-            return {
-                email: req.email,
-                loggedInUserId: req.loggedInUserId
-            }
-        }
+        // context: async ({ req }) => {
+        //     await verifyUser(req)
+        //     return {
+        //         email: req.email,
+        //         loggedInUserId: req.loggedInUserId
+        //     }
+        // }
     });
 
     apolloServer.applyMiddleware({ app, path: '/graphql' });
